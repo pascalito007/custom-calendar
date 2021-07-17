@@ -1,0 +1,25 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  background: "#9dbcc5";
+  padding-left: 2%;
+  color: white;
+  font-size: small;
+  border: 1.5px solid black;
+  /* width: 50%; */
+}
+.date-area {
+  padding-top: 16px;
+}
+.revision {
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: x-small;
+  padding-right: 20px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: black;
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
