@@ -29,8 +29,9 @@
     <tr>
       <td class="td-class" [attr.colspan]="item.others.colspan">
         <app-planing-item-block
-          [width]="'100%'"
+          [width]="item.others.with"
           [backGroundColor]="'#9dbcc5'"
+          [marginLeft]="item.others.marginLeft"
           [revisionWidth]="'70px'"
           [item]="item.planing"
         ></app-planing-item-block>

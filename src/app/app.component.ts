@@ -64,10 +64,21 @@ export class AppComponent implements OnInit {
   }
 
   getOthersProps(from, to, index) {
-    if (index === 0) return { colspan: "2", tdCount: ["", "", "", "", ""] };
+    if (index === 0)
+      return {
+        colspan: "2",
+        tdCount: ["", "", "", "", ""],
+        with: "80%",
+        marginLeft: "5%",
+      };
     else if (index === 1)
-      return { colspan: "1", tdCount: ["", "", "", "", "", ""] };
-    return { colspan: "7", tdCount: [] };
+      return {
+        colspan: "1",
+        tdCount: ["", "", "", "", "", ""],
+        with: "100%",
+        marginLeft: "0%",
+      };
+    return { colspan: "7", tdCount: [], with: "100%", marginLeft: "0%" };
   }
 
   onInputChange() {

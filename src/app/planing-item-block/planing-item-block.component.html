@@ -1,4 +1,11 @@
-<div class="panel" [ngStyle]="{ width: width, background: backGroundColor }">
+<div
+  class="panel"
+  [ngStyle]="{
+    width: width,
+    background: backGroundColor,
+    'margin-left': marginLeft
+  }"
+>
   <div>{{ item.item1 }}</div>
   <span class="revision" [ngStyle]="{ width: revisionWidth }">{{
     item.item2
