@@ -7,7 +7,7 @@
   />
 </div>
 <br />
-<table class="table table-bordered">
+<table class="table table-bordered" *ngIf="inputData">
   <thead>
     <tr>
       <th scope="col" *ngFor="let date of colums">{{ date }}</th>
@@ -27,7 +27,7 @@
       </th>
     </tr>
     <tr>
-      <td class="td-class" [attr.colspan]="item.colspan">
+      <td class="td-class" [attr.colspan]="item.others.colspan">
         <app-planing-item-block
           [width]="'100%'"
           [backGroundColor]="'#9dbcc5'"
@@ -35,11 +35,7 @@
           [item]="item.planing"
         ></app-planing-item-block>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td *ngFor="let td of item.others.tdCount">{{ td }}</td>
     </tr>
   </tbody>
 </table>
